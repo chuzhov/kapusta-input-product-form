@@ -1,9 +1,9 @@
-import InputProductForm from './InputProductForm/InputProductForm';
+import InputTransactionForm from './InputTransactionForm/InputTransactionForm';
 
 export const App = () => {
   return (
     <div style={{ padding: '1rem' }}>
-      <InputProductForm />
+      <InputTransactionForm />
     </div>
   );
 };

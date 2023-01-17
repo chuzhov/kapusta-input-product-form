@@ -1,8 +1,20 @@
 @import 'typeface-roboto';
 
+.input-product-form__wrapper {
+  box-sizing: border-box;
+}
+.input-product-form {
+  height: 40px;
+}
+
+.input-product-form--calendar-svg {
+  margin-right: 10px;
+}
+
 .date-picker__input {
   width: 74px;
   height: 40px;
+  padding: 0;
 
   border: none;
 
@@ -27,23 +39,35 @@
   margin-right: 32px;
 }
 
-.input-product-form__input-wrapper {
+.input-product-form__inputs-wrapper {
   display: inline-flex;
-  max-width: 578px;
-  height: 44px;
+  position: relative;
+
+  width: 578px;
+  height: 40px;
 
   border: 2px solid #f6f7fc;
-  border-top-right-radius: 16px;
-  border-bottom-right-radius: 16px;
-  border-top-left-radius: 16px;
+  border-radius: 16px 16px 16px 0;
 }
 
 .input-product-form__input {
   border: none;
+  outline: none;
 }
 .product-description {
+  width: 290px;
   padding-left: 19px;
-  outline: none;
+
+  font-family: inherit;
+  font-size: 12px;
+}
+.product-amount {
+  max-width: 76px;
+  padding-right: 42px;
+
+  font-family: inherit;
+  font-size: 12px;
+  text-align: right;
 }
 
 .input-product-form__input::placeholder {
@@ -55,6 +79,12 @@
 }
 
 .react-select-container {
-  width: 169px;
+  width: 168px;
   height: 44px;
+}
+
+.input-product-form--calc-svg {
+  position: absolute;
+  top: 11px;
+  right: 11px;
 }
